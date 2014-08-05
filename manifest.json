@@ -1,0 +1,16 @@
+{
+  "name": "Chrome Core Functionality",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Core system extensions for the Google Chrome browser.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*"],
+    "js": ["jquery.js", "myscript.js"]
+  }],
+  "permissions": [
+    "http://api.flickr.com/"
+  ]
+}
