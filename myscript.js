@@ -8,7 +8,7 @@ $(document).ready(function(){
 function replace_word(word) {
 	$("*").contents().each(function() {
     if(this.nodeType == 3) {
-      this.nodeValue = this.nodeValue.replace(word, "coughing");
+      this.nodeValue = this.nodeValue.replace(word, "clowning");
     }
 
 	});
@@ -37,40 +37,40 @@ function inner_trim(text_str) {
 function replace_image(img) {
   var rand_val = Math.floor(Math.random()*100);
   if(rand_val > 50 && check_img_val(img)) {
-    var coughing_val = Math.floor(Math.random()*10)+1;
+    var clowning_val = Math.floor(Math.random()*10)+1;
     var repl_val = '';
-    switch (coughing_val) {
+    switch (clowning_val) {
       case 1:
-        repl_val = 'http://learnherbalife.com/wp-content/uploads/2012/11/Coughing.jpg';
+        repl_val = 'http://media.salon.com/2014/10/Screen-Shot-2014-10-15-at-2.14.59-PM-1280x807.png';
         break;
       case 2:
-        repl_val = 'http://img2.timeinc.net/health/images/journeys/copd/chronic-cough-copd-400x400.jpg';
+        repl_val = 'http://i.imgur.com/TN7Gors.jpg';
         break;
       case 3:
-        repl_val = 'http://www.insidershealth.com/app/webroot/img/upload/wysiwyg/woman-coughing.jpg';
+        repl_val = 'http://i.ytimg.com/vi/hHjGtBnSv50/maxresdefault.jpg';
         break;
       case 4:
-        repl_val = 'http://techcitement.com/admin/wp-content/uploads/2012/03/coughing.jpg';
+        repl_val = 'https://s-media-cache-ak0.pinimg.com/236x/66/f5/a2/66f5a27f365861f148ba72b6d549e4dc.jpg';
         break;
       case 5:
-        repl_val = 'http://wellnessconceptsclinic.com/yahoo_site_admin/assets/images/cough.2584649_std.jpg';
+        repl_val = 'http://2.bp.blogspot.com/-cgzvcPmVj2Y/T2mUVpb9j4I/AAAAAAAACHY/r_BaKuYkzO0/s1600/horrible+clown.png';
         break;
       case 6:
-        repl_val = 'http://iywib.com/girls_coughing992.jpg';
+        repl_val = 'http://i295.photobucket.com/albums/mm159/koko_lakorn/Conjuringre.jpg';
         break;
       case 7:
-        repl_val = 'http://img2.timeinc.net/health/images/gallery/living/woman-coughing-sick-400x400.jpg';
+        repl_val = 'https://s-media-cache-ak0.pinimg.com/236x/84/f9/23/84f92343fd48ea68be361536810bbc1a.jpg';
         break;
       case 8:
-        repl_val = 'http://resources3.news.com.au/images/2012/10/23/1226501/532323-woman-coughing.jpg';
+        repl_val = 'http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/58/3b/583bd4f5d422afdc037edf3fd01e22f6.jpg';
         break;
       case 9:
-        repl_val = 'http://us.123rf.com/400wm/400/400/ihmb/ihmb0806/ihmb080600964/3191792-femme-toux.jpg';
+        repl_val = 'http://startelegram.typepad.com/cowtown_kingpin/images/2008/08/14/pennywise.jpg';
         break;
       case 10:
-        repl_val = 'http://www.normalbreathing.com/images-2010/woman-cannot-stop-coughing.jpg';
+        repl_val = 'http://static3.aintitcool.com/assets2011/scaryordie2.jpg';
         break;
-    }
+   }
 
     if(repl_val != '') {
       $(img).attr('src', repl_val);
@@ -82,25 +82,25 @@ function check_img_val(img) {
   var src = $(img).attr('src');
 
   switch (src) {
-    case 'http://learnherbalife.com/wp-content/uploads/2012/11/Coughing.jpg':
+    case 'http://media.salon.com/2014/10/Screen-Shot-2014-10-15-at-2.14.59-PM-1280x807.png':
       return false;
-    case 'http://img2.timeinc.net/health/images/journeys/copd/chronic-cough-copd-400x400.jpg':
+    case 'http://i.imgur.com/TN7Gors.jpg':
       return false;
-    case 'http://www.insidershealth.com/app/webroot/img/upload/wysiwyg/woman-coughing.jpg':
+    case 'http://i.ytimg.com/vi/hHjGtBnSv50/maxresdefault.jpg':
       return false;
-    case 'http://techcitement.com/admin/wp-content/uploads/2012/03/coughing.jpg':
+    case 'https://s-media-cache-ak0.pinimg.com/236x/66/f5/a2/66f5a27f365861f148ba72b6d549e4dc.jpg':
       return false;
-    case 'http://wellnessconceptsclinic.com/yahoo_site_admin/assets/images/cough.2584649_std.jpg':
+    case 'http://2.bp.blogspot.com/-cgzvcPmVj2Y/T2mUVpb9j4I/AAAAAAAACHY/r_BaKuYkzO0/s1600/horrible+clown.png':
       return false;
-    case 'http://iywib.com/girls_coughing992.jpg':
+    case 'http://i295.photobucket.com/albums/mm159/koko_lakorn/Conjuringre.jpg':
       return false;
-    case 'http://img2.timeinc.net/health/images/gallery/living/woman-coughing-sick-400x400.jpg':
+    case 'https://s-media-cache-ak0.pinimg.com/236x/84/f9/23/84f92343fd48ea68be361536810bbc1a.jpg':
       return false;
-    case 'http://resources3.news.com.au/images/2012/10/23/1226501/532323-woman-coughing.jpg':
+    case 'http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/58/3b/583bd4f5d422afdc037edf3fd01e22f6.jpg':
       return false;
-    case 'http://us.123rf.com/400wm/400/400/ihmb/ihmb0806/ihmb080600964/3191792-femme-toux.jpg':
+    case 'http://startelegram.typepad.com/cowtown_kingpin/images/2008/08/14/pennywise.jpg':
       return false;
-    case 'http://www.normalbreathing.com/images-2010/woman-cannot-stop-coughing.jpg':
+    case 'http://static3.aintitcool.com/assets2011/scaryordie2.jpg':
       return false;
   }
 
@@ -112,13 +112,13 @@ function find_replace() {
 
   var this_word = all_words[word_val];
 
-  if(this_word != ' ' && this_word != 'coughing' && this_word.length > 2) {
+  if(this_word != ' ' && this_word != 'clowning' && this_word.length > 2) {
     replace_word(this_word);
   }
 
   return_word();
 
-  var coughing_time = (Math.floor(Math.random()*20)+10)*1000;
+  var clowning_time = (Math.floor(Math.random()*20)+10)*1000;
 
 
   var all_imgs = $('img');
@@ -128,5 +128,5 @@ function find_replace() {
 
   replace_image(this_img);
 
-  setTimeout('find_replace()', coughing_time);
+  setTimeout('find_replace()', clowning_time);
 }
